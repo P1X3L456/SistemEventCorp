@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Asistencia.cs" />
+    <Compile Include="Clases\AyudaFormulario.cs" />
     <Compile Include="Clases\Certificado.cs" />
     <Compile Include="Clases\Conferencia.cs" />
     <Compile Include="Clases\Evento.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Metodos\metodosAsistencia.cs" />
     <Compile Include="Metodos\metodosCertificado.cs" />
     <Compile Include="Metodos\metodosConferencia.cs" />
+    <Compile Include="Metodos\metodosConsulta.cs" />
     <Compile Include="Metodos\metodosEvento.cs" />
     <Compile Include="Metodos\metodosInscripcion.cs" />
     <Compile Include="Metodos\metodosParticipante.cs" />

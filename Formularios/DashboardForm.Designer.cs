@@ -208,6 +208,7 @@
             this.btnSecondary.TabIndex = 0;
             this.btnSecondary.Text = "Enviar aviso";
             this.btnSecondary.UseVisualStyleBackColor = false;
+            this.btnSecondary.Click += new System.EventHandler(this.btnSecondary_Click);
             // 
             // btnPrimary
             // 
@@ -222,6 +223,7 @@
             this.btnPrimary.TabIndex = 1;
             this.btnPrimary.Text = "Revisar agenda";
             this.btnPrimary.UseVisualStyleBackColor = false;
+            this.btnPrimary.Click += new System.EventHandler(this.btnPrimary_Click);
             // 
             // txtField5
             // 
@@ -515,6 +517,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Name = "DashboardForm";
             this.Text = "Panel de trabajo";
+            this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.pagePanel.ResumeLayout(false);
             this.groupList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();

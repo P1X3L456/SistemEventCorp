@@ -83,10 +83,10 @@
             this.groupList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupList.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.groupList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(38)))), ((int)(((byte)(55)))));
-            this.groupList.Location = new System.Drawing.Point(24, 468);
+            this.groupList.Location = new System.Drawing.Point(24, 463);
             this.groupList.Name = "groupList";
             this.groupList.Padding = new System.Windows.Forms.Padding(12, 32, 12, 12);
-            this.groupList.Size = new System.Drawing.Size(952, 128);
+            this.groupList.Size = new System.Drawing.Size(952, 133);
             this.groupList.TabIndex = 0;
             this.groupList.TabStop = false;
             this.groupList.Text = "Asistencia del dia";
@@ -115,7 +115,7 @@
             this.dgvMain.RowHeadersVisible = false;
             this.dgvMain.RowTemplate.Height = 30;
             this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMain.Size = new System.Drawing.Size(928, 66);
+            this.dgvMain.Size = new System.Drawing.Size(928, 71);
             this.dgvMain.TabIndex = 0;
             // 
             // col1
@@ -162,11 +162,11 @@
             this.topLayout.Controls.Add(this.groupForm, 0, 0);
             this.topLayout.Controls.Add(this.groupStatus, 1, 0);
             this.topLayout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topLayout.Location = new System.Drawing.Point(24, 218);
+            this.topLayout.Location = new System.Drawing.Point(24, 191);
             this.topLayout.Name = "topLayout";
             this.topLayout.RowCount = 1;
             this.topLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.topLayout.Size = new System.Drawing.Size(952, 250);
+            this.topLayout.Size = new System.Drawing.Size(952, 272);
             this.topLayout.TabIndex = 1;
             // 
             // groupForm
@@ -190,7 +190,7 @@
             this.groupForm.Location = new System.Drawing.Point(0, 0);
             this.groupForm.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
             this.groupForm.Name = "groupForm";
-            this.groupForm.Size = new System.Drawing.Size(397, 250);
+            this.groupForm.Size = new System.Drawing.Size(397, 272);
             this.groupForm.TabIndex = 0;
             this.groupForm.TabStop = false;
             this.groupForm.Text = "Validar llegada";
@@ -208,6 +208,7 @@
             this.btnSecondary.TabIndex = 0;
             this.btnSecondary.Text = "Agregar nota";
             this.btnSecondary.UseVisualStyleBackColor = false;
+            this.btnSecondary.Click += new System.EventHandler(this.btnSecondary_Click);
             // 
             // btnPrimary
             // 
@@ -222,6 +223,7 @@
             this.btnPrimary.TabIndex = 1;
             this.btnPrimary.Text = "Marcar presente";
             this.btnPrimary.UseVisualStyleBackColor = false;
+            this.btnPrimary.Click += new System.EventHandler(this.btnPrimary_Click);
             // 
             // txtField5
             // 
@@ -332,7 +334,7 @@
             this.groupStatus.Location = new System.Drawing.Point(421, 0);
             this.groupStatus.Margin = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.groupStatus.Name = "groupStatus";
-            this.groupStatus.Size = new System.Drawing.Size(531, 250);
+            this.groupStatus.Size = new System.Drawing.Size(531, 272);
             this.groupStatus.TabIndex = 1;
             this.groupStatus.TabStop = false;
             this.groupStatus.Text = "Ritmo de recepcion";
@@ -412,7 +414,7 @@
             this.metricsPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.metricsPanel.Location = new System.Drawing.Point(24, 114);
             this.metricsPanel.Name = "metricsPanel";
-            this.metricsPanel.Size = new System.Drawing.Size(952, 104);
+            this.metricsPanel.Size = new System.Drawing.Size(952, 77);
             this.metricsPanel.TabIndex = 2;
             // 
             // lblMetric1
@@ -423,7 +425,7 @@
             this.lblMetric1.Location = new System.Drawing.Point(0, 0);
             this.lblMetric1.Name = "lblMetric1";
             this.lblMetric1.Padding = new System.Windows.Forms.Padding(14, 10, 14, 10);
-            this.lblMetric1.Size = new System.Drawing.Size(226, 96);
+            this.lblMetric1.Size = new System.Drawing.Size(226, 72);
             this.lblMetric1.TabIndex = 0;
             // 
             // lblMetric2
@@ -431,11 +433,12 @@
             this.lblMetric2.BackColor = System.Drawing.Color.White;
             this.lblMetric2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblMetric2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(38)))), ((int)(((byte)(55)))));
-            this.lblMetric2.Location = new System.Drawing.Point(238, 0);
+            this.lblMetric2.Location = new System.Drawing.Point(244, 0);
             this.lblMetric2.Name = "lblMetric2";
             this.lblMetric2.Padding = new System.Windows.Forms.Padding(14, 10, 14, 10);
-            this.lblMetric2.Size = new System.Drawing.Size(226, 96);
+            this.lblMetric2.Size = new System.Drawing.Size(226, 72);
             this.lblMetric2.TabIndex = 1;
+            this.lblMetric2.Click += new System.EventHandler(this.lblMetric2_Click);
             // 
             // lblMetric3
             // 
@@ -445,7 +448,7 @@
             this.lblMetric3.Location = new System.Drawing.Point(476, 0);
             this.lblMetric3.Name = "lblMetric3";
             this.lblMetric3.Padding = new System.Windows.Forms.Padding(14, 10, 14, 10);
-            this.lblMetric3.Size = new System.Drawing.Size(226, 96);
+            this.lblMetric3.Size = new System.Drawing.Size(226, 72);
             this.lblMetric3.TabIndex = 2;
             // 
             // lblMetric4
@@ -456,7 +459,7 @@
             this.lblMetric4.Location = new System.Drawing.Point(714, 0);
             this.lblMetric4.Name = "lblMetric4";
             this.lblMetric4.Padding = new System.Windows.Forms.Padding(14, 10, 14, 10);
-            this.lblMetric4.Size = new System.Drawing.Size(226, 96);
+            this.lblMetric4.Size = new System.Drawing.Size(226, 72);
             this.lblMetric4.TabIndex = 3;
             // 
             // heroPanel

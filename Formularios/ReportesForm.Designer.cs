@@ -208,6 +208,7 @@
             this.btnSecondary.TabIndex = 0;
             this.btnSecondary.Text = "Exportar";
             this.btnSecondary.UseVisualStyleBackColor = false;
+            this.btnSecondary.Click += new System.EventHandler(this.btnSecondary_Click);
             // 
             // btnPrimary
             // 
@@ -222,6 +223,7 @@
             this.btnPrimary.TabIndex = 1;
             this.btnPrimary.Text = "Generar vista";
             this.btnPrimary.UseVisualStyleBackColor = false;
+            this.btnPrimary.Click += new System.EventHandler(this.btnPrimary_Click);
             // 
             // txtField5
             // 
@@ -250,6 +252,7 @@
             this.cboField4.Name = "cboField4";
             this.cboField4.Size = new System.Drawing.Size(172, 23);
             this.cboField4.TabIndex = 4;
+            this.cboField4.SelectedIndexChanged += new System.EventHandler(this.cboField4_SelectedIndexChanged);
             // 
             // lblField4
             // 
@@ -516,6 +519,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Name = "ReportesForm";
             this.Text = "Reportes";
+            this.Load += new System.EventHandler(this.ReportesForm_Load);
             this.pagePanel.ResumeLayout(false);
             this.groupList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();

@@ -117,6 +117,7 @@
             this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMain.Size = new System.Drawing.Size(928, 69);
             this.dgvMain.TabIndex = 0;
+            this.dgvMain.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMain_CellClick);
             // 
             // col1
             // 
@@ -208,6 +209,7 @@
             this.btnSecondary.TabIndex = 0;
             this.btnSecondary.Text = "Revisar rol";
             this.btnSecondary.UseVisualStyleBackColor = false;
+            this.btnSecondary.Click += new System.EventHandler(this.btnSecondary_Click);
             // 
             // btnPrimary
             // 
@@ -222,6 +224,7 @@
             this.btnPrimary.TabIndex = 1;
             this.btnPrimary.Text = "Guardar acceso";
             this.btnPrimary.UseVisualStyleBackColor = false;
+            this.btnPrimary.Click += new System.EventHandler(this.btnPrimary_Click);
             // 
             // txtField5
             // 
@@ -515,6 +518,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Name = "UsuariosForm";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.UsuariosForm_Load);
             this.pagePanel.ResumeLayout(false);
             this.groupList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();

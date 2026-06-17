@@ -117,6 +117,7 @@
             this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMain.Size = new System.Drawing.Size(928, 71);
             this.dgvMain.TabIndex = 0;
+            this.dgvMain.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMain_CellClick);
             // 
             // col1
             // 
@@ -208,6 +209,7 @@
             this.btnSecondary.TabIndex = 0;
             this.btnSecondary.Text = "Vista previa";
             this.btnSecondary.UseVisualStyleBackColor = false;
+            this.btnSecondary.Click += new System.EventHandler(this.btnSecondary_Click);
             // 
             // btnPrimary
             // 
@@ -222,6 +224,7 @@
             this.btnPrimary.TabIndex = 1;
             this.btnPrimary.Text = "Generar";
             this.btnPrimary.UseVisualStyleBackColor = false;
+            this.btnPrimary.Click += new System.EventHandler(this.btnPrimary_Click);
             // 
             // txtField5
             // 

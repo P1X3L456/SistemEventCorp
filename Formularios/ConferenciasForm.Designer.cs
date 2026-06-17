@@ -117,6 +117,7 @@
             this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMain.Size = new System.Drawing.Size(928, 56);
             this.dgvMain.TabIndex = 0;
+            this.dgvMain.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMain_CellClick);
             // 
             // col1
             // 
@@ -208,6 +209,7 @@
             this.btnSecondary.TabIndex = 0;
             this.btnSecondary.Text = "Revisar hora";
             this.btnSecondary.UseVisualStyleBackColor = false;
+            this.btnSecondary.Click += new System.EventHandler(this.btnSecondary_Click);
             // 
             // btnPrimary
             // 
@@ -222,6 +224,7 @@
             this.btnPrimary.TabIndex = 1;
             this.btnPrimary.Text = "Anadir agenda";
             this.btnPrimary.UseVisualStyleBackColor = false;
+            this.btnPrimary.Click += new System.EventHandler(this.btnPrimary_Click);
             // 
             // txtField5
             // 
@@ -250,6 +253,7 @@
             this.cboField4.Name = "cboField4";
             this.cboField4.Size = new System.Drawing.Size(172, 23);
             this.cboField4.TabIndex = 4;
+            this.cboField4.SelectedIndexChanged += new System.EventHandler(this.cboField4_SelectedIndexChanged);
             // 
             // lblField4
             // 
@@ -514,6 +518,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Name = "ConferenciasForm";
             this.Text = "Conferencias";
+            this.Load += new System.EventHandler(this.ConferenciasForm_Load);
             this.pagePanel.ResumeLayout(false);
             this.groupList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
